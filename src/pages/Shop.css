@@ -34,14 +34,14 @@
     position: absolute;
     bottom: 0;
     margin: 10px;
-    color: #fff;
+    color: #000000;
   }
   
   .infoText {
     width: 100%;
     justify-content: center;
     display: flex;
-    color: #fff;
+    color: #000000;
     animation-name: popup;
     animation-duration: 800ms;
   }

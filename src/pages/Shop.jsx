@@ -4,25 +4,28 @@ import './Shop.css'
 
 const db = [
   {
-    name: 'Richard Hendricks',
-    url: 'https://i.ibb.co/VH0RjH8/DALL-E-2023-04-09-10-48-13-An-ultra-modern-state-of-the-art-clothing-store-powered-by-AI-algorithms.png'
+    name: 'Amazon Brand - Symbol Men Formal Shirt',
+    price: '₹ 499.00',
+    url: 'https://m.media-amazon.com/images/I/71rPzF8rYQL._UX466_.jpg'
   },
   {
-    name: 'Erlich Bachman', 
-    url: 'https://i.ibb.co/VH0RjH8/DALL-E-2023-04-09-10-48-13-An-ultra-modern-state-of-the-art-clothing-store-powered-by-AI-algorithms.png'
+    name: 'Levis Mens 512 Slim Tapered Fit Jeans', 
+    price: '₹ 1,999.00',
+    url: 'https://m.media-amazon.com/images/I/51XUSlpm9fL._UX679_.jpg'
   },
   {
-    name: 'Monica Hall',   
-    url: 'https://i.ibb.co/VH0RjH8/DALL-E-2023-04-09-10-48-13-An-ultra-modern-state-of-the-art-clothing-store-powered-by-AI-algorithms.png'
+    name: 'Urbano Fashion Mens Slim Fit Black Stretch Jeans',
+    price: '₹ 1,499.00',
+    url: 'https://m.media-amazon.com/images/I/611hFiiUv4L._UX679_.jpg'
+
   },
   {
-    name: 'Jared Dunn',
-    url: 'https://i.ibb.co/VH0RjH8/DALL-E-2023-04-09-10-48-13-An-ultra-modern-state-of-the-art-clothing-store-powered-by-AI-algorithms.png'
-  },
-  {
-    name: 'Dinesh Chugtai',
-    url: 'https://i.ibb.co/VH0RjH8/DALL-E-2023-04-09-10-48-13-An-ultra-modern-state-of-the-art-clothing-store-powered-by-AI-algorithms.png'
+    name:'Van Heusen Mens Regular Fit Polo Shirt',
+    price: '₹ 1,499.00',
+  
+    url: 'https://m.media-amazon.com/images/I/91uC3XLtnNL._UX466_.jpg'
   }
+
 ]
 
 function Shop () {
@@ -52,6 +55,9 @@ function Shop () {
   const swiped = (direction, nameToDelete, index) => {
     setLastDirection(direction)
     updateCurrentIndex(index - 1)
+
+      
+    
   }
 
   const outOfFrame = (name, idx) => {
@@ -94,6 +100,12 @@ function Shop () {
                 className='card'
                 >
                     <h3>{character.name}</h3>
+                    <h2>{character.price}</h2>
+                    
+                </div>
+
+                <div>
+                    
                 </div>
             </TinderCard>
             ))}
