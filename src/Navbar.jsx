@@ -16,7 +16,7 @@ const Navbar = () => {
       <div
         style={{ fontWeight: "bolder", margin: "0 40px", fontSize: "1.5rem" }}
       >
-        The Fashion
+        Stylr
       </div>
       <div style={{ display: "flex", fontSize: "1.1rem" }}>
         <div style={{ margin: "0 30px", cursor: "pointer" }} onClick={() => navigate("/")}>
