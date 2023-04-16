@@ -5,9 +5,8 @@ Stylr is a web application built using Vite, React JS, HTML, and CSS. It helps u
 To get started with the Stylr v2 web application, follow the instructions below:
 
 ## Clone the repository using Git:
-bash
-Copy code
-git clone https://github.com/your-username/stylr-v2.git
+
+```git clone https://github.com/ameykunte/stylr-v2.git```
 
 ## Install the required dependencies using npm:
 
