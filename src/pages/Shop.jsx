@@ -1,7 +1,21 @@
 import React, { useState, useMemo, useRef } from 'react'
 import TinderCard from 'react-tinder-card'
 import './Shop.css'
+//This is a React component that displays a set of cards containing information about products and allows the user to swipe left or right to reject or accept them. The component uses the react-tinder-card library to implement the swiping functionality.
 
+//The db variable holds an array of objects, where each object represents a product and contains its name, price, and an image URL.
+
+// The component uses state hooks to manage the current index of the card being displayed (currentIndex) and the direction of the last swipe (lastDirection). It also uses a useMemo hook to create an array of refs to the child components, which are the individual cards.
+
+//The swiped function is called when a card is swiped, and it updates the lastDirection state and the currentIndex state based on the direction of the swipe.
+
+//The outOfFrame function is called when a card is swiped off the screen, and it logs a message to the console. If the card is swiped off the screen before the goBack function is called to restore it, the function restores the card to its original position.
+
+//The swipe function is called when the user clicks on one of the swipe buttons, and it calls the swipe function of the child component to perform the swipe.
+
+//The goBack function is called when the user clicks on the "Undo swipe" button, and it restores the most recently swiped card to its original position.
+
+//Finally, the component renders a container with all the cards, and three buttons to swipe left, swipe right, or undo the most recent swipe. It also displays a message indicating the direction of the last swipe or prompting the user to swipe a card or press a button.
 const db = [
   {
     name: 'Amazon Brand - Symbol Men Formal Shirt',
