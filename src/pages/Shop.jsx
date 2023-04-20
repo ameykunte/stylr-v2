@@ -50,15 +50,14 @@ function Shop () {
   const canGoBack = currentIndex < db.length - 1
 
   const canSwipe = currentIndex >= 0
-
-  // set last direction and decrease current index
-  const swiped = (direction, nameToDelete, index) => {
-    setLastDirection(direction)
-    updateCurrentIndex(index - 1)
-
-      
-    
+ // set last direction and decrease current index
+ const swiped = (direction, nameToDelete, index) => {
+  setLastDirection(direction)
+  updateCurrentIndex(index - 1)
+  if (direction === 'right') {
+    window.open(db[index].url, '_blank') // open link in new tab
   }
+}
 
   const outOfFrame = (name, idx) => {
     console.log(`${name} (${idx}) left the screen!`, currentIndexRef.current)
