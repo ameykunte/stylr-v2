@@ -6,24 +6,27 @@ const db = [
   {
     name: 'Amazon Brand - Symbol Men Formal Shirt',
     price: '₹ 499.00',
-    url: 'https://m.media-amazon.com/images/I/71rPzF8rYQL._UX466_.jpg'
+    url: 'https://m.media-amazon.com/images/I/71rPzF8rYQL._UX466_.jpg',
+    link: 'https://www.amazon.in/Amazon-Brand-Symbol-Formal-Shirt/dp/B07ZQZQZ3Z/ref=sr_1_1?dchild=1&keywords=shirt&qid=1610000000&sr=8-1'
   },
   {
     name: 'Levis Mens 512 Slim Tapered Fit Jeans', 
     price: '₹ 1,999.00',
-    url: 'https://m.media-amazon.com/images/I/51XUSlpm9fL._UX679_.jpg'
+    url: 'https://m.media-amazon.com/images/I/51XUSlpm9fL._UX679_.jpg',
+    link: 'https://www.amazon.in/Levis-Mens-512-Slim-Tapered/dp/B07ZQZQZ3Z/ref=sr_1_1?dchild=1&keywords=shirt&qid=1610000000&sr=8-1'
   },
   {
     name: 'Urbano Fashion Mens Slim Fit Black Stretch Jeans',
     price: '₹ 1,499.00',
-    url: 'https://m.media-amazon.com/images/I/611hFiiUv4L._UX679_.jpg'
+    url: 'https://m.media-amazon.com/images/I/611hFiiUv4L._UX679_.jpg',
+    link: 'https://www.amazon.in/Urbano-Fashion-Mens-Slim-Black/dp/B07ZQZQZ3Z/ref=sr_1_1?dchild=1&keywords=shirt&qid=1610000000&sr=8-1'
 
   },
   {
     name:'Van Heusen Mens Regular Fit Polo Shirt',
     price: '₹ 1,499.00',
-  
-    url: 'https://m.media-amazon.com/images/I/91uC3XLtnNL._UX466_.jpg'
+    url: 'https://m.media-amazon.com/images/I/91uC3XLtnNL._UX466_.jpg',
+    link: 'https://www.amazon.in/Van-Heusen-Mens-Regular-Polo/dp/B07ZQZQZ3Z/ref=sr_1_1?dchild=1&keywords=shirt&qid=1610000000&sr=8-1'
   }
 
 ]
@@ -55,7 +58,7 @@ function Shop () {
   setLastDirection(direction)
   updateCurrentIndex(index - 1)
   if (direction === 'right') {
-    window.open(db[index].url, '_blank') // open link in new tab
+    window.open(db[index].link, '_blank') // open link in new tab
   }
 }
 
