@@ -13,7 +13,8 @@ const About = () => {
         height: "100vh",
       }}
     >
-      <img src="/1.png"></img>
+      <iframe src="/Stylr.pdf" width="100%" height="800"></iframe>
+      {/* <img src="/1.png"></img>
       <img src="/2.png"></img>
       <img src="/3.png"></img>
       <img src="/4.png"></img>
@@ -23,7 +24,7 @@ const About = () => {
       <img src="/8.png"></img>  
       <img src="/9.png"></img>
       <img src="/10.png"></img>
-      <img src="/11.png"></img>
+      <img src="/11.png"></img> */}
 
     </div>
   );
