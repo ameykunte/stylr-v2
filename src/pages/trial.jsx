@@ -4,7 +4,7 @@ const openai = require('openai')
 const fs = require('fs')
 
 // First, set up your OpenAI API key
-openai.api_key = 'YOUR_API_KEY'
+openai.api_key = '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'
 
 // Read the JSON file containing the inputs
 const inputs = JSON.parse(fs.readFileSync('inputs.json', 'utf8'))
