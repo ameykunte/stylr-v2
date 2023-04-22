@@ -1,35 +1,7 @@
 import React, { useState, useMemo, useRef } from 'react'
 import TinderCard from 'react-tinder-card'
 import './Shop.css'
-
-const db = [
-  {
-    name: 'Amazon Brand - Symbol Men Formal Shirt',
-    price: '₹ 499.00',
-    url: 'https://m.media-amazon.com/images/I/71rPzF8rYQL._UX466_.jpg',
-    link: 'https://www.amazon.in/Amazon-Brand-Symbol-Formal-Shirt/dp/B07ZQZQZ3Z/ref=sr_1_1?dchild=1&keywords=shirt&qid=1610000000&sr=8-1'
-  },
-  {
-    name: 'Levis Mens 512 Slim Tapered Fit Jeans', 
-    price: '₹ 1,999.00',
-    url: 'https://m.media-amazon.com/images/I/51XUSlpm9fL._UX679_.jpg',
-    link: 'https://www.amazon.in/Levis-Mens-512-Slim-Tapered/dp/B07ZQZQZ3Z/ref=sr_1_1?dchild=1&keywords=shirt&qid=1610000000&sr=8-1'
-  },
-  {
-    name: 'Urbano Fashion Mens Slim Fit Black Stretch Jeans',
-    price: '₹ 1,499.00',
-    url: 'https://m.media-amazon.com/images/I/611hFiiUv4L._UX679_.jpg',
-    link: 'https://www.amazon.in/Urbano-Fashion-Mens-Slim-Black/dp/B07ZQZQZ3Z/ref=sr_1_1?dchild=1&keywords=shirt&qid=1610000000&sr=8-1'
-
-  },
-  {
-    name:'Van Heusen Mens Regular Fit Polo Shirt',
-    price: '₹ 1,499.00',
-    url: 'https://m.media-amazon.com/images/I/91uC3XLtnNL._UX466_.jpg',
-    link: 'https://www.amazon.in/Van-Heusen-Mens-Regular-Polo/dp/B07ZQZQZ3Z/ref=sr_1_1?dchild=1&keywords=shirt&qid=1610000000&sr=8-1'
-  }
-
-]
+import db from './Clothes'
 
 function Shop () {
   const [currentIndex, setCurrentIndex] = useState(db.length - 1)
